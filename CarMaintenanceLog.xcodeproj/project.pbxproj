@@ -15,6 +15,25 @@
 		042193061B75545E00BA4DA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042193051B75545E00BA4DA7 /* Images.xcassets */; };
 		042193091B75545E00BA4DA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042193071B75545E00BA4DA7 /* LaunchScreen.xib */; };
 		042193151B75545E00BA4DA7 /* CarMaintenanceLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042193141B75545E00BA4DA7 /* CarMaintenanceLogTests.m */; };
+		0421931F1B7556E900BA4DA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421931E1B7556E900BA4DA7 /* AudioToolbox.framework */; };
+		042193211B7556F200BA4DA7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193201B7556F200BA4DA7 /* CFNetwork.framework */; };
+		042193231B75570500BA4DA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193221B75570500BA4DA7 /* CoreGraphics.framework */; };
+		042193251B75570E00BA4DA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193241B75570E00BA4DA7 /* CoreLocation.framework */; };
+		042193271B75571800BA4DA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193261B75571800BA4DA7 /* QuartzCore.framework */; };
+		042193291B75572000BA4DA7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193281B75572000BA4DA7 /* Security.framework */; };
+		0421932B1B75572700BA4DA7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421932A1B75572700BA4DA7 /* StoreKit.framework */; };
+		0421932D1B75574500BA4DA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421932C1B75574500BA4DA7 /* SystemConfiguration.framework */; };
+		0421932F1B75574C00BA4DA7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421932E1B75574C00BA4DA7 /* libz.dylib */; };
+		042193311B75575600BA4DA7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193301B75575600BA4DA7 /* libsqlite3.dylib */; };
+		042193391B7557A600BA4DA7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193331B7557A600BA4DA7 /* Bolts.framework */; };
+		0421933A1B7557A600BA4DA7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193341B7557A600BA4DA7 /* Parse.framework */; };
+		0421933B1B7557A600BA4DA7 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193351B7557A600BA4DA7 /* ParseCrashReporting.framework */; };
+		0421933C1B7557A600BA4DA7 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193361B7557A600BA4DA7 /* ParseFacebookUtils.framework */; };
+		0421933D1B7557A600BA4DA7 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193371B7557A600BA4DA7 /* ParseFacebookUtilsV4.framework */; };
+		0421933E1B7557A600BA4DA7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193381B7557A600BA4DA7 /* ParseUI.framework */; };
+		042193401B755EB600BA4DA7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421933F1B755EB600BA4DA7 /* AVFoundation.framework */; };
+		04E8527E1B7AB3E10069F802 /* CameraVINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */; };
+		04E852811B7AB4DA0069F802 /* VehicleEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +61,27 @@
 		0421930E1B75545E00BA4DA7 /* CarMaintenanceLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarMaintenanceLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042193131B75545E00BA4DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042193141B75545E00BA4DA7 /* CarMaintenanceLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarMaintenanceLogTests.m; sourceTree = "<group>"; };
+		0421931E1B7556E900BA4DA7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		042193201B7556F200BA4DA7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		042193221B75570500BA4DA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		042193241B75570E00BA4DA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		042193261B75571800BA4DA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		042193281B75572000BA4DA7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0421932A1B75572700BA4DA7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0421932C1B75574500BA4DA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0421932E1B75574C00BA4DA7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		042193301B75575600BA4DA7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		042193331B7557A600BA4DA7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		042193341B7557A600BA4DA7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		042193351B7557A600BA4DA7 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		042193361B7557A600BA4DA7 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		042193371B7557A600BA4DA7 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		042193381B7557A600BA4DA7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		0421933F1B755EB600BA4DA7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04E8527C1B7AB3E10069F802 /* CameraVINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraVINViewController.h; sourceTree = "<group>"; };
+		04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraVINViewController.m; sourceTree = "<group>"; };
+		04E8527F1B7AB4DA0069F802 /* VehicleEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleEntryViewController.h; sourceTree = "<group>"; };
+		04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +89,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042193401B755EB600BA4DA7 /* AVFoundation.framework in Frameworks */,
+				0421933C1B7557A600BA4DA7 /* ParseFacebookUtils.framework in Frameworks */,
+				042193311B75575600BA4DA7 /* libsqlite3.dylib in Frameworks */,
+				0421932F1B75574C00BA4DA7 /* libz.dylib in Frameworks */,
+				0421932D1B75574500BA4DA7 /* SystemConfiguration.framework in Frameworks */,
+				0421932B1B75572700BA4DA7 /* StoreKit.framework in Frameworks */,
+				042193291B75572000BA4DA7 /* Security.framework in Frameworks */,
+				0421933E1B7557A600BA4DA7 /* ParseUI.framework in Frameworks */,
+				042193271B75571800BA4DA7 /* QuartzCore.framework in Frameworks */,
+				042193251B75570E00BA4DA7 /* CoreLocation.framework in Frameworks */,
+				042193231B75570500BA4DA7 /* CoreGraphics.framework in Frameworks */,
+				042193391B7557A600BA4DA7 /* Bolts.framework in Frameworks */,
+				042193211B7556F200BA4DA7 /* CFNetwork.framework in Frameworks */,
+				0421933A1B7557A600BA4DA7 /* Parse.framework in Frameworks */,
+				0421931F1B7556E900BA4DA7 /* AudioToolbox.framework in Frameworks */,
+				0421933B1B7557A600BA4DA7 /* ParseCrashReporting.framework in Frameworks */,
+				0421933D1B7557A600BA4DA7 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +125,7 @@
 				042192F41B75545E00BA4DA7 /* CarMaintenanceLog */,
 				042193111B75545E00BA4DA7 /* CarMaintenanceLogTests */,
 				042192F31B75545E00BA4DA7 /* Products */,
+				042193321B75578500BA4DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +145,10 @@
 				042192FA1B75545E00BA4DA7 /* AppDelegate.m */,
 				042192FF1B75545E00BA4DA7 /* ViewController.h */,
 				042193001B75545E00BA4DA7 /* ViewController.m */,
+				04E8527C1B7AB3E10069F802 /* CameraVINViewController.h */,
+				04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */,
+				04E8527F1B7AB4DA0069F802 /* VehicleEntryViewController.h */,
+				04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */,
 				042193021B75545E00BA4DA7 /* Main.storyboard */,
 				042193051B75545E00BA4DA7 /* Images.xcassets */,
 				042193071B75545E00BA4DA7 /* LaunchScreen.xib */,
@@ -120,6 +182,30 @@
 				042193131B75545E00BA4DA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		042193321B75578500BA4DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0421933F1B755EB600BA4DA7 /* AVFoundation.framework */,
+				042193301B75575600BA4DA7 /* libsqlite3.dylib */,
+				042193331B7557A600BA4DA7 /* Bolts.framework */,
+				042193341B7557A600BA4DA7 /* Parse.framework */,
+				042193351B7557A600BA4DA7 /* ParseCrashReporting.framework */,
+				042193361B7557A600BA4DA7 /* ParseFacebookUtils.framework */,
+				042193371B7557A600BA4DA7 /* ParseFacebookUtilsV4.framework */,
+				042193381B7557A600BA4DA7 /* ParseUI.framework */,
+				0421932E1B75574C00BA4DA7 /* libz.dylib */,
+				0421932C1B75574500BA4DA7 /* SystemConfiguration.framework */,
+				0421932A1B75572700BA4DA7 /* StoreKit.framework */,
+				042193281B75572000BA4DA7 /* Security.framework */,
+				042193261B75571800BA4DA7 /* QuartzCore.framework */,
+				042193241B75570E00BA4DA7 /* CoreLocation.framework */,
+				042193221B75570500BA4DA7 /* CoreGraphics.framework */,
+				042193201B7556F200BA4DA7 /* CFNetwork.framework */,
+				0421931E1B7556E900BA4DA7 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E852811B7AB4DA0069F802 /* VehicleEntryViewController.m in Sources */,
+				04E8527E1B7AB3E10069F802 /* CameraVINViewController.m in Sources */,
 				042192FE1B75545E00BA4DA7 /* CarMaintenanceLog.xcdatamodeld in Sources */,
 				042192FB1B75545E00BA4DA7 /* AppDelegate.m in Sources */,
 				042193011B75545E00BA4DA7 /* ViewController.m in Sources */,
@@ -351,6 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CarMaintenanceLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CarMaintenanceLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +516,7 @@
 				0421931A1B75545E00BA4DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0421931B1B75545E00BA4DA7 /* Build configuration list for PBXNativeTarget "CarMaintenanceLogTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +525,7 @@
 				0421931D1B75545E00BA4DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
