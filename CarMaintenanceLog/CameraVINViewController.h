@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+@import AVFoundation;
 
-@interface CameraVINViewController : UIViewController
+@interface CameraVINViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate, AVAudioPlayerDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *cameraCapture;
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) IBOutlet UIButton *pictureButtonPressed;
+@property (strong, nonatomic) IBOutlet UIView *viewPreview;
+
 
 
 @end

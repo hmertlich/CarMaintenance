@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VehicleEntryViewController : UIViewController
+@interface NewVehicleViewController : UIViewController
+
+@property (strong, nonatomic) 
+
+@property (strong, nonatomic) IBOutlet UITextField *VINTextField;
 
 @end

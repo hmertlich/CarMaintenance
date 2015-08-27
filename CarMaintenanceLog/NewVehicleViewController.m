@@ -6,18 +6,36 @@
 //  Copyright (c) 2015 M Auto. All rights reserved.
 //
 
-#import "VehicleEntryViewController.h"
+#import "NewVehicleViewController.h"
 
-@interface VehicleEntryViewController ()
+@interface NewVehicleViewController ()
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (strong, nonatomic) IBOutlet UIButton *cameraButton;
+
+@property (strong, nonatomic) IBOutlet UITextField *makeTextField;
+@property (strong, nonatomic) IBOutlet UITextField *modelTextField;
+@property (strong, nonatomic) IBOutlet UITextField *yearTextField;
+@property (strong, nonatomic) IBOutlet UITextField *trimTextField;
+@property (strong, nonatomic) IBOutlet UITextField *styleTextField;
+
 
 @end
 
-@implementation VehicleEntryViewController
+@implementation NewVehicleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (void) viewWillAppear:(BOOL)animated {
+    // TimeStamp to current date and time
+}
+
+
+# pragma mark - Text editing methods
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

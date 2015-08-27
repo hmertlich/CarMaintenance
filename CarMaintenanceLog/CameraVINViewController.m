@@ -10,86 +10,71 @@
 
 @interface CameraVINViewController ()
 
+@property (nonatomic, strong) AVCaptureSession *captureSession;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+
 @end
 
 @implementation CameraVINViewController
 
-AVCaptureSession *session;
-AVCaptureStillImageOutput *stillImageOutput;
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    session = [[AVCaptureSession alloc] init];
-    [session setSessionPreset:AVCaptureSessionPresetPhoto];
     
-    AVCaptureDevice *inputDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    // Initially makes the captureSession object nil
+    self.captureSession = nil;
+    
     NSError *error;
-    AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:inputDevice error:&error];
     
-    if ([session canAddInput:deviceInput]) {
-        [session addInput:deviceInput];
-    }
+    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     
-    AVCaptureVideoPreviewLayer *previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
-    [previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-    CALayer *rootLayer = [[self view] layer];
-    [rootLayer setMasksToBounds:YES];
-    CGRect frame = self.cameraCapture.frame;
+    AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:captureDevice error:&error];
     
-    [previewLayer setFrame:frame];
+    self.captureSession = [AVCaptureSession new];
+    [self.captureSession addInput:input];
     
-    [rootLayer insertSublayer:previewLayer atIndex:0];
+    AVCaptureMetadataOutput *captureMetadataOutput = [AVCaptureMetadataOutput new];
+    [self.captureSession addOutput:captureMetadataOutput];
     
-    stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
-    NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG, AVVideoCodecKey, nil];
-    [stillImageOutput setOutputSettings:outputSettings];
+    // Create a new serial dispatch queue
+    dispatch_queue_t dispatchQueue;
+    dispatchQueue = dispatch_queue_create("myQueue", NULL);
+    [captureMetadataOutput setMetadataObjectsDelegate:self queue:dispatchQueue];
     
-    [session addOutput:stillImageOutput];
+    [captureMetadataOutput setMetadataObjectTypes:[NSArray arrayWithObject:AVMetadataObjectTypeCode128Code]];
     
-    [session startRunning];
+    // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer
+    self.videoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
+    [self.videoPreviewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+    [self.videoPreviewLayer setFrame:self.view.layer.bounds];
+    [self.viewPreview.layer addSublayer:self.videoPreviewLayer];
+    
+    // Start video capture
+    [self.captureSession startRunning];
 }
 
-
-
-- (UIButton *)pictureButtonPressed {
-    AVCaptureConnection *videoConnection = nil;
-    for (AVCaptureConnection *connection in stillImageOutput.connections) {
-        for (AVCaptureInputPort *port in [connection inputPorts]) {
-            if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
-                videoConnection = connection;
-                break;
-            }
-        }
-    }
-    [stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection
-                                                  completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
-                                                      if (imageDataSampleBuffer != NULL) {
-                                                          NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-                                                          UIImage *image = [UIImage imageWithData:imageData];
-                                                          _imageView.image = image;
-                                                      }
-                                                  }];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) stopReading {
+    [self.captureSession startRunning];
+    self.captureSession = nil;
+    
+    [self.videoPreviewLayer removeFromSuperlayer];
 }
-*/
+
+
+
+# pragma mark - AVCaptureMetadataOutputObjectsDelegate method implementation
+
+- (void) captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
+    
+    // code goes here
+}
+
+
 
 @end

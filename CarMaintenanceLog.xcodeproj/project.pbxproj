@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040781AA1B8F758C005B3B05 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 040781A91B8F758C005B3B05 /* Vehicle.m */; };
 		042192F81B75545E00BA4DA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042192F71B75545E00BA4DA7 /* main.m */; };
 		042192FB1B75545E00BA4DA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042192FA1B75545E00BA4DA7 /* AppDelegate.m */; };
 		042192FE1B75545E00BA4DA7 /* CarMaintenanceLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 042192FC1B75545E00BA4DA7 /* CarMaintenanceLog.xcdatamodeld */; };
@@ -33,7 +34,7 @@
 		0421933E1B7557A600BA4DA7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042193381B7557A600BA4DA7 /* ParseUI.framework */; };
 		042193401B755EB600BA4DA7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0421933F1B755EB600BA4DA7 /* AVFoundation.framework */; };
 		04E8527E1B7AB3E10069F802 /* CameraVINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */; };
-		04E852811B7AB4DA0069F802 /* VehicleEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */; };
+		04E852811B7AB4DA0069F802 /* NewVehicleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E852801B7AB4DA0069F802 /* NewVehicleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040781A81B8F758C005B3B05 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		040781A91B8F758C005B3B05 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		042192F21B75545E00BA4DA7 /* CarMaintenanceLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarMaintenanceLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042192F61B75545E00BA4DA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042192F71B75545E00BA4DA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,8 +83,8 @@
 		0421933F1B755EB600BA4DA7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		04E8527C1B7AB3E10069F802 /* CameraVINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraVINViewController.h; sourceTree = "<group>"; };
 		04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraVINViewController.m; sourceTree = "<group>"; };
-		04E8527F1B7AB4DA0069F802 /* VehicleEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleEntryViewController.h; sourceTree = "<group>"; };
-		04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleEntryViewController.m; sourceTree = "<group>"; };
+		04E8527F1B7AB4DA0069F802 /* NewVehicleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVehicleViewController.h; sourceTree = "<group>"; };
+		04E852801B7AB4DA0069F802 /* NewVehicleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVehicleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040781A51B8F7481005B3B05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				042192FF1B75545E00BA4DA7 /* ViewController.h */,
+				042193001B75545E00BA4DA7 /* ViewController.m */,
+				04E8527F1B7AB4DA0069F802 /* NewVehicleViewController.h */,
+				04E852801B7AB4DA0069F802 /* NewVehicleViewController.m */,
+				04E8527C1B7AB3E10069F802 /* CameraVINViewController.h */,
+				04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */,
+				040781A71B8F74A8005B3B05 /* Controller */,
+				040781A61B8F748B005B3B05 /* Model */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		040781A61B8F748B005B3B05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040781A81B8F758C005B3B05 /* Vehicle.h */,
+				040781A91B8F758C005B3B05 /* Vehicle.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		040781A71B8F74A8005B3B05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		042192E91B75545E00BA4DA7 = {
 			isa = PBXGroup;
 			children = (
@@ -143,12 +177,7 @@
 			children = (
 				042192F91B75545E00BA4DA7 /* AppDelegate.h */,
 				042192FA1B75545E00BA4DA7 /* AppDelegate.m */,
-				042192FF1B75545E00BA4DA7 /* ViewController.h */,
-				042193001B75545E00BA4DA7 /* ViewController.m */,
-				04E8527C1B7AB3E10069F802 /* CameraVINViewController.h */,
-				04E8527D1B7AB3E10069F802 /* CameraVINViewController.m */,
-				04E8527F1B7AB4DA0069F802 /* VehicleEntryViewController.h */,
-				04E852801B7AB4DA0069F802 /* VehicleEntryViewController.m */,
+				040781A51B8F7481005B3B05 /* Views */,
 				042193021B75545E00BA4DA7 /* Main.storyboard */,
 				042193051B75545E00BA4DA7 /* Images.xcassets */,
 				042193071B75545E00BA4DA7 /* LaunchScreen.xib */,
@@ -308,9 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E852811B7AB4DA0069F802 /* VehicleEntryViewController.m in Sources */,
+				04E852811B7AB4DA0069F802 /* NewVehicleViewController.m in Sources */,
 				04E8527E1B7AB3E10069F802 /* CameraVINViewController.m in Sources */,
 				042192FE1B75545E00BA4DA7 /* CarMaintenanceLog.xcdatamodeld in Sources */,
+				040781AA1B8F758C005B3B05 /* Vehicle.m in Sources */,
 				042192FB1B75545E00BA4DA7 /* AppDelegate.m in Sources */,
 				042193011B75545E00BA4DA7 /* ViewController.m in Sources */,
 				042192F81B75545E00BA4DA7 /* main.m in Sources */,
