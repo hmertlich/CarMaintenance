@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Vehicle.h"
 
 @interface NewVehicleViewController : UIViewController
 
-@property (strong, nonatomic) 
+@property (strong, nonatomic) Vehicle *vehicle;
 
 @property (strong, nonatomic) IBOutlet UITextField *VINTextField;
 
