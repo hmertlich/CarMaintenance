@@ -19,4 +19,8 @@
 @property (nonatomic, retain) NSString * trim;
 @property (nonatomic, retain) NSString * style;
 
+- (instancetype) initWithDictionary:(NSDictionary *) dictionary;
+
++ (NSString *) parseClassName;
+
 @end

@@ -26,6 +26,35 @@
     return @"Vehicle";
 }
 
-
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    if (self) {
+        if (dictionary[@"timeStamp"]) {
+            self.timeStamp = dictionary[@"timeStamp"];
+        }
+        
+        if (dictionary[@"make"]) {
+            self.make = dictionary[@"make"];
+        }
+        
+        if (dictionary[@"model"]) {
+            self.model = dictionary[@"model"];
+        }
+        
+        if (dictionary[@"year"]) {
+            self.year = dictionary[@"year"];
+        }
+        
+        if (dictionary[@"trim"]) {
+            self.trim = dictionary[@"trim"];
+        }
+        
+        if (dictionary[@"style"]) {
+            self.style = dictionary[@"style"];
+        }
+    }
+    return self;
+}
 
 @end
